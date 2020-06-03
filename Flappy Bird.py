@@ -1,5 +1,4 @@
 import pygame
-import Pygame_theColors
 import random
 import time
 
