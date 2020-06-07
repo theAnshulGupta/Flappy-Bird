@@ -78,9 +78,6 @@ while True:
 
     clock.tick(200)
 
-
-##    changedet=random.randint(0,1)
-
     if changedet==0 and topx==500 and gameOver==False: 
         topychange=random.randint(200,375)
         bottomychange=random.randint(150,525-topychange)
@@ -110,9 +107,7 @@ while True:
     if birdy<=560 and gameOver==False:
         birdy+=1
 
-    #the pipe is in the middle--> that means that the object is 300p wide and the pipe is in between 100p and 200p
     if (topy<=birdy<=topy+topychange-5 and topx+110<=birdx+20<=topx+190) or (600-bottomychange<=birdy+20<=600 and bottomx+110<=birdx+20<=bottomx+190) or birdy==0 or birdy==560:
-##            print(topx, "and", topy )
         textAriel("Game Over", 400, 300, black, 30)
         textAriel("Your Score:", 400,325,black,20)
         textAriel((str(int(score*0.5))), 400,350,black,20)
@@ -123,6 +118,3 @@ while True:
         print(score)
 
     textAriel(str(int(score*0.5)), 570,580,white,20)
-
-    
-        
